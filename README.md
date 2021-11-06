@@ -52,11 +52,22 @@ Running Local Node
 2. Now the command we're going to run to deploy locally is:
 npx hardhat run scripts/deploy.js --network localhost
 ---
-- Create a replit profile
--- you can fork this proj here: https://replit.com/@adilanchian/waveportal-starter-project
-- create an Alchemy account & create a DEVELOPMENT app using the RINKEBY testnet under the ETH Network
-- add your PRIVATE Metamask Key + DEVELOPMENT Alchemy key to your hardhat.config,js file
-- Run: npx hardhat run scripts/deploy.js --network rinkeby to deploy to the Rinkeby testnet
+Working with REPLIT, METAMASK, & ALCHEMY going forward
+1. Create a replit profile
+-- you can fork this proj here: https://replit.com/@rayadamas/sardaukarchantProj#.replit
+2. Metamask can be found here: https://metamask.io/download.html
+- test-ETH faucet: https://faucet.rinkeby.io/
+3. Reference final `hardhat.config.js` file for updated code where PRIVATE KEY values will be utilized
+4. create an Alchemy account & create a DEVELOPMENT app using the RINKEBY testnet under the ETH Network: https://alchemy.com/?r=b93d1f12b8828a57
+3. add your PRIVATE Metamask Key + DEVELOPMENT Alchemy key to your `hardhat.config,js` file
+- Run: `npx hardhat run scripts/deploy.js --network rinkeby` to deploy to the Rinkeby testnet
 RECORD WHAT IS OUTPUT TO YOUR TERMINAL
+Note: any changes to LOCAL contracts' code will need to be re-tested, then re-deployed. 
+1. Deploy it again.
+2. Update the contract address on our frontend.
+3. Update the abi file on our frontend.
+Once re-deployed you must take the NEW `WavePortal Address` output to your terminal & add it to your `app.js` code via Replit under `const contractAddress`
+Next locate the ABI code in your LOCAL code env found here: `artifacts/contracts/WavePortal.sol/WavePortal.json`, then copy said code and paste said code under such path: `src/utils/WavePortal.json` on Replit.
 WavePortal address:  0xBLAHBLAHBLAH50763
--- working in REPLIT going forward
+
+*DO NOT COMMIT BARE PRIVATE KEYS TO GITHUB OR ANYWHERE*
