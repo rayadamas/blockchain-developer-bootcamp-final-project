@@ -83,3 +83,15 @@ Any changes to LOCAL contracts' code will need to be re-tested, then re-deployed
 
 
 *DO NOT COMMIT BARE PRIVATE KEYS TO GITHUB OR ANYWHERE*
+`dotenv` is used in this example.
+
+1. Withing your project directory run: `npm install --save dotenv`
+2. Refer to `hardhat.config.js` for code skeleton
+3. Create a `.env` file withing the projects directory.
+Format is as follows:
+
+STAGING_ALCHEMY_KEY=;
+PROD_ALCHEMY_KEY=;
+PRIVATE_KEY=;
+
+4. Ensure `.env` is withing your `.gitignore` file
