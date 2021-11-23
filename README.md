@@ -16,8 +16,6 @@ WORKING FROM LOCAL TERMINAL
 `cd mySampleProj`
 `npm init -y`
 `npm install --save-dev hardhat`
-- You need to install these dependencies to run the sample project:
-  `npm install --save-dev "hardhat@^2.6.8" "@nomiclabs/hardhat-waffle@^2.0.0" "ethereum-waffle@^3.0.0" "chai@^4.2.0" "@nomiclabs/hardhat-ethers@^2.0.0" "ethers@^5.0.0"`
 
 2. Run created sample project:
 `npx hardhat`
@@ -26,8 +24,9 @@ Carefully read what is output and run commands accordingly.
 
 3. Choose the option to create a sample project. Say yes to everything.
 The sample project will ask you to install `hardhat-waffle` and `hardhat-ethers`
-- DO NOT FORGET THIS INSTRUCTION FROM HARDHAT!!!
-
+**DO NOT FORGET THIS INSTRUCTION FROM HARDHAT!!!**
+- You need to install these dependencies to run the sample project:
+  `npm install --save-dev "hardhat@^2.6.8" "@nomiclabs/hardhat-waffle@^2.0.0" "ethereum-waffle@^3.0.0" "chai@^4.2.0" "@nomiclabs/hardhat-ethers@^2.0.0" "ethers@^5.0.0"`
 4. Finally, run `npx hardhat accounts` 
 - and this should print out a bunch of strings that look like this:
 0xBLAHBLAHRANDOMaDDRESS9720
