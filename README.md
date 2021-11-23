@@ -44,9 +44,11 @@ Output should display the contents of the .sol contract code.
 ---
 **Writing Contract**
 1. Create a file named `sardaukar.sol` under the contracts directory in your code editor
+- Refer to code in:
 
 Initialize Local Blockchain Environment to Test
 1. Go into the `scripts` directory and make a file named `run.js`
+- Refer to code in: 
 2. Run: `npx hardhat run scripts/run.js`
 *Run this any time code is altered to ensure its functionality*
 
@@ -54,14 +56,16 @@ Initialize Local Blockchain Environment to Test
 **Running Local Node**
 1. In terminal window separate to your current workspace, cd into your proj then run: `npx hardhat node`
 This will create a local Ethereum network that stays alive as long as the terminal window remains open.
-2. Now the command we're going to run to deploy locally is:
+2. Create a file named `deploy,js` under the scripts directory in youe code editor
+- Refer to code in: 
+3. Now the command we're going to run to deploy locally is:
 `npx hardhat run scripts/deploy.js --network localhost`
 
 (Note)
 This is run from your `mySampleProj` directory in a terminal window _separate_ from the window hosting our local blockchain environment.
 
 ---
-Working with REPLIT, METAMASK, & ALCHEMY going forward
+**Explanation of REPLIT code**
 1. Create a replit profile
 - you can fork this project [here](https://replit.com/@rayadamas/sardaukarchantProj#.replit)
 
@@ -79,7 +83,7 @@ Any changes to LOCAL contracts' code will need to be re-tested, then re-deployed
 - Once re-deployed you must take the NEW contract address output to your terminal & add it to your `app.js` code via Replit under `const contractAddress`
 - `yourSampleProj address:  0xBLAHBLAHBLAH50763`
 3. Update the ABI file on our Replit frontend
-- Locate the ABI code in your LOCAL code env via this path: `artifacts/contracts/yourSampleProj.sol/yourSampleProj.json`, then copy said code and paste said code under such path on Replit under this path: `./src/utils/yourSampleProj.json` 
+- Locate the ABI code in your LOCAL code env via this path: `artifacts/contracts/yourSampleProj.sol/yourSampleProj.json`, then copy said code and paste said code under such path on Replit under this path: `./src/utils/sardaukarchant.json` 
 
 
 *DO NOT COMMIT BARE PRIVATE KEYS TO GITHUB OR ANYWHERE*
