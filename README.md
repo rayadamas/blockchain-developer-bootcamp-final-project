@@ -74,18 +74,6 @@ This is run from your `mySampleProj` directory in a terminal window _separate_ f
 3. Create an Alchemy account & create a DEVELOPMENT app using the RINKEBY testnet under the ETH Network [here](https://alchemy.com/?r=b93d1f12b8828a57)
 4. Add your PRIVATE Metamask Key + DEVELOPMENT Alchemy key to your `hardhat.config,js` file
 - Reference final `hardhat.config.js` file for updated code where PRIVATE KEY values will be utilized
-- Run: `npx hardhat run scripts/deploy.js --network rinkeby` to deploy to the Rinkeby testnet
-_RECORD WHAT IS OUTPUT TO YOUR TERMINAL_
-(Note)
-Any changes to LOCAL contracts' code will need to be re-tested, then re-deployed. 
-1. Deploy your scrpt again
-2. Update the contract address on your Replit frontend
-- Once re-deployed you must take the NEW contract address output to your terminal & add it to your `app.js` code via Replit under `const contractAddress`
-- `yourSampleProj address:  0xBLAHBLAHBLAH50763`
-3. Update the ABI file on our Replit frontend
-- Locate the ABI code in your LOCAL code env via this path: `artifacts/contracts/yourSampleProj.sol/yourSampleProj.json`, then copy said code and paste said code under such path on Replit under this path: `./src/utils/sardaukarchant.json` 
-
-
 *DO NOT COMMIT BARE PRIVATE KEYS TO GITHUB OR ANYWHERE*
 `dotenv` is used in this example.
 
@@ -99,3 +87,16 @@ PROD_ALCHEMY_KEY=;
 PRIVATE_KEY=;
 
 4. Ensure `.env` is withing your `.gitignore` file
+
+- Run: `npx hardhat run scripts/deploy.js --network rinkeby` to deploy to the Rinkeby testnet
+_RECORD WHAT IS OUTPUT TO YOUR TERMINAL_
+(Note)
+Any changes to LOCAL contracts' code will need to be re-tested, then re-deployed. 
+1. Deploy your scrpt again
+2. Update the contract address on your Replit frontend
+- Once re-deployed you must take the NEW contract address output to your terminal & add it to your `app.js` code via Replit under `const contractAddress`
+- `yourSampleProj address:  0xBLAHBLAHBLAH50763`
+3. Update the ABI file on our Replit frontend
+- Locate the ABI code in your LOCAL code env via this path: `artifacts/contracts/yourSampleProj.sol/yourSampleProj.json`, then copy said code and paste said code under such path on Replit under this path: `./src/utils/sardaukarchant.json` 
+
+
